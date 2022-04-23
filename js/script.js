@@ -21,7 +21,7 @@
 }
 //input
 const randomNumber = Math.floor(Math.random() * 6) + 1
-const slider = valueFromSlider
+var slider = valueFromSlider
 
 /**
  * This function checks the slider value.
