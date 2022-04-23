@@ -14,7 +14,7 @@
 }
 
 //input
-const randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
+const randomNumber = Math.floor(Math.random() * 6) + 1
 var slider = "slider-value"
 
 /**
@@ -35,7 +35,7 @@ document.getElementById("answer").innerHTML = "Your answer is " + answerCheck
 
 let answerCheck
 
-  if ( slider == randomNumber ) {
+  if ( slider == randomNumber.toFixed(0) ) {
     answerCheck = "Correct"
 } else {
     answerCheck = "Incorrect" 
