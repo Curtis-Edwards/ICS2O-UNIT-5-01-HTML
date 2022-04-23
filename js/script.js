@@ -13,15 +13,16 @@
   })
 }
 
+//input
+const randomNumber = Math.floor(Math.random() * 6) + 1
+var slider = valueFromSlider
+
 /**
  * This function updates the slider value.
  */
  function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
 }
-//input
-const randomNumber = Math.floor(Math.random() * 6) + 1
-var slider = valueFromSlider
 
 /**
  * This function checks the slider value.
