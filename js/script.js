@@ -31,7 +31,7 @@ document.getElementById("hello-world").innerHTML = "The answer is " + answerChec
 
 let answerCheck
 
-  if (slider.value == randomNumber) {
+  if ( valueFromSlider == randomNumber ) {
     answerCheck = "Correct"
 } else {
     answerCheck = "Incorrect" 
