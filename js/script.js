@@ -5,15 +5,35 @@
 'use strict'
 
 /**
- * Check servie worker.
+ * Check service worker.
  */
  if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-PWA-Template/sw.js", {
-    scope: "/ICS20-PWA-Template/",
+  navigator.serviceWorker.register("/ICS2O-UNIT-5-01-HTML/sw.js", {
+    scope: "/ICS2O-UNIT-5-01-HTML/",
   })
 }
 
 /**
- * This function displays an xxx.
+ * This function updates the slider value.
  */
+ function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML = valueFromSlider
+}
+//input
+const randomNumber = Math.floor(Math.random() * 6) + 1
+
+/**
+ * This function checks the slider value.
+ */
+function buttonClicked() {
+document.getElementById("hello-world").innerHTML = "The answer is " + answerCheck
+}
+
+let answerCheck
+
+  if (valueFromSlider == randomNumber) {
+    answerCheck = "Correct"
+} else {
+    answerCheck = "Incorrect" 
+}
 
