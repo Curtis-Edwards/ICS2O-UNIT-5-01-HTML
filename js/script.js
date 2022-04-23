@@ -21,6 +21,7 @@
 }
 //input
 const randomNumber = Math.floor(Math.random() * 6) + 1
+const slider = valueFromSlider
 
 /**
  * This function checks the slider value.
@@ -31,7 +32,7 @@ document.getElementById("hello-world").innerHTML = "The answer is " + answerChec
 
 let answerCheck
 
-  if ( valueFromSlider == randomNumber ) {
+  if ( slider == randomNumber ) {
     answerCheck = "Correct"
 } else {
     answerCheck = "Incorrect" 
