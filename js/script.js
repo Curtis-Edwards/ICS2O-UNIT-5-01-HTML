@@ -28,8 +28,10 @@ var slider = "slider-value"
  * This function checks the slider value.
  */
 function buttonClicked() {
-document.getElementById("hello-world").innerHTML = "The answer is " + answerCheck
+document.getElementById("answer").innerHTML = "Your answer is " + answerCheck
+  document.getElementById("correct-answer").innerHTML = "The correct answer is " + randomNumber
 }
+
 
 let answerCheck
 
