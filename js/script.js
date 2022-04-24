@@ -15,7 +15,6 @@
 
 //input
 const randomNumber = Math.floor(Math.random() * 6) + 1
-var slider = "slider-value"
 
 /**
  * This function updates the slider value.
@@ -29,13 +28,13 @@ var slider = "slider-value"
  */
 function buttonClicked() {
 document.getElementById("answer").innerHTML = "Your answer is " + answerCheck
-  document.getElementById("correct-answer").innerHTML = "The correct answer is " + randomNumber
+document.getElementById("correct-answer").innerHTML = "The correct answer is " + randomNumber
 }
-
+, 
 
 let answerCheck
 
-  if ( slider == randomNumber.toFixed(0) ) {
+  if ( "slider-value" == randomNumber ) {
     answerCheck = "Correct"
 } else {
     answerCheck = "Incorrect" 
