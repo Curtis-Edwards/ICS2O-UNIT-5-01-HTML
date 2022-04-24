@@ -14,7 +14,7 @@
 }
 
 // variables
-const slider = parseInt(document.getElementById('slider').value)
+const slider = parseInt(document.getElementById('slider-value').innerHTML) 
 const randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
 
 /**
