@@ -8,8 +8,8 @@
  * Check service worker.
  */
  if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-UNIT-5-01-HTML/sw.js", {
-    scope: "/ICS2O-UNIT-5-01-HTML/",
+  navigator.serviceWorker.register('/ICS2O-UNIT-5-01-HTML/sw.js', {
+    scope: '/ICS2O-UNIT-5-01-HTML/',
   })
 }
 
@@ -20,22 +20,22 @@ const randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
  * This function updates the slider value.
  */
  function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
+  document.getElementById('slider-value').innerHTML = valueFromSlider
 }
 
 /**
  * This function checks the slider value.
  */
 function buttonClicked() {
-document.getElementById("answer").innerHTML = "Your answer is " + answerCheck
-document.getElementById("correct-answer").innerHTML = "The correct answer is " + randomNumber
+document.getElementById('answer').innerHTML = 'Your answer is ' + answerCheck
+document.getElementById('correct-answer').innerHTML = 'The correct answer is ' + randomNumber
 }
 
 let answerCheck
 
-  if ( "slider-value" < randomNumber ) {
-    answerCheck = "Correct"
+  if ( 'slider-value' == randomNumber ) {
+    answerCheck = 'Correct'
 } else {
-    answerCheck = "Incorrect" 
+    answerCheck = 'Incorrect' 
 }
 
