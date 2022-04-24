@@ -14,7 +14,7 @@
 }
 
 //input
-const randomNumber = Math.floor(Math.random() * 6) + 1
+const randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
 
 /**
  * This function updates the slider value.
