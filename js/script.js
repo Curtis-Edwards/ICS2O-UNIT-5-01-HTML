@@ -33,7 +33,7 @@ document.getElementById("correct-answer").innerHTML = "The correct answer is " +
 
 let answerCheck
 
-  if ( "slider-value" == randomNumber ) {
+  if ( "slider-value" < randomNumber ) {
     answerCheck = "Correct"
 } else {
     answerCheck = "Incorrect" 
