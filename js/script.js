@@ -30,7 +30,6 @@ function buttonClicked() {
 document.getElementById("answer").innerHTML = "Your answer is " + answerCheck
 document.getElementById("correct-answer").innerHTML = "The correct answer is " + randomNumber
 }
-, 
 
 let answerCheck
 
