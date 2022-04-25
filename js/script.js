@@ -12,6 +12,11 @@
     scope: "/ICS2O-UNIT-5-01-HTML/",
   })
 }
+/**
+ * This function generates a random number
+ */
+
+const randomNumber = Math.floor(Math.random() * 6) + 1
 
 /**
  * This function updates the slider value.
@@ -26,14 +31,14 @@
 function buttonClicked() {
   const sliderValue = slider.value
 
-  //  block of code to be executed if condition1 is true
+  //  block of code to be executed if slider is == to randomNumber
   if (sliderValue == randomNumber) {
     document.getElementById("answer").innerHTML =
       "Answer is " + randomNumber + ". Correct!"
     // console.log(". Correct!")
   }
     
-  //  block of code to be executed if condition1 is true
+  //  block of code to be executed if slider is != to randomNumber
   if (sliderValue != randomNumber) {
     document.getElementById("answer").innerHTML =
       "Answer is " + randomNumber + ". Incorrect..."
