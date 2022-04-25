@@ -29,7 +29,7 @@ function ButtonClicked() {
 }
 
 // process
-if (random - number == slider - value) {
+if ( "random-number" == "slider-value" ) {
   print("Correct!")
 }
 
