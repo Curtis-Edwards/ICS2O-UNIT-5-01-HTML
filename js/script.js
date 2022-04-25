@@ -29,14 +29,14 @@ function buttonClicked() {
   //  block of code to be executed if condition1 is true
   if (sliderValue == randomNumber) {
     document.getElementById("answer").innerHTML =
-      "Answer is " + randomNumber + "!" + " Correct!"
+      "Answer is " + randomNumber + ". Correct!"
     // console.log(". Correct!")
   }
     
   //  block of code to be executed if condition1 is true
   if (sliderValue != randomNumber) {
     document.getElementById("answer").innerHTML =
-      "Answer is " + randomNumber + "!" + " . Incorrect"
+      "Answer is " + randomNumber + ". Incorrect..."
     // console.log(". Incorrect...")
   }
 }
