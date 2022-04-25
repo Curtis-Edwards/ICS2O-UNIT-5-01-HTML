@@ -13,11 +13,6 @@
   })
 }
 
-
-function getSliderValue(slider) {
-  document.getElementById("slider-value").innerHTML = slider
-}
-
 // variables
 const randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
 
@@ -38,7 +33,7 @@ document.getElementById('correct-answer').innerHTML = 'The correct answer is ' +
 
 let answerCheck
 
-  if ( slider == randomNumber ) {
+  if ( 'slider-value' == randomNumber ) {
     answerCheck = 'Correct'
 } else {
     answerCheck = 'Incorrect' 
