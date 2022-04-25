@@ -35,5 +35,5 @@ if (random - number == slider - value) {
 
 // process
 if (random - number != slider - value) {
-  print("Incorrect!")
+  print("Incorrect...")
 }
