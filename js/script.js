@@ -13,6 +13,9 @@
   })
 }
 
+// This function generates a random number.
+
+
 /**
  * This function updates the slider value.
  */
@@ -24,13 +27,14 @@
  * This function checks the slider value.
  */
 function buttonClicked() {
+const randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
 document.getElementById("answer").innerHTML = "Your answer is " + answerCheck
 document.getElementById("correct-answer").innerHTML = "The correct answer is " + randomNumber
 }
 
 let answerCheck
 
-  if ( "slider-value" == (Math.floor(Math.random() * 6) + 1).toFixed(0) ) {
+  if ( "slider-value" == randomNumber ) {
     answerCheck = "Correct"
 } else {
     answerCheck = "Incorrect" 
