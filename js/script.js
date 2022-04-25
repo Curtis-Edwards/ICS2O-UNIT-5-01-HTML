@@ -23,7 +23,7 @@
 /**
  * This function displays the slider value.
  */
-function ButtonClicked() {
+function buttonClicked() {
   document.getElementById("random-number").innerHTML =
     Math.floor(Math.random() * 6) + 1
 }
