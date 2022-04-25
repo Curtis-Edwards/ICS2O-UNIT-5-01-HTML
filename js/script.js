@@ -21,19 +21,19 @@
 }
 
 /**
- * This function checks the slider value.
+ * This function displays the slider value.
  */
-function buttonClicked() {
-var randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
-document.getElementById("answer").innerHTML = "Your answer is " + answerCheck
-document.getElementById("correct-answer").innerHTML = "The correct answer is " + randomNumber
+function ButtonClicked() {
+  document.getElementById("random-number").innerHTML =
+    Math.floor(Math.random() * 6) + 1
 }
 
-let answerCheck
-
-  if ( "slider-value" == randomNumber ) {
-    answerCheck = "Correct"
-} else {
-    answerCheck = "Incorrect" 
+// process
+if (random - number == slider - value) {
+  print("Correct!")
 }
 
+// process
+if (random - number != slider - value) {
+  print("Incorrect!")
+}
