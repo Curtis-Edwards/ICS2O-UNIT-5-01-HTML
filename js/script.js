@@ -13,9 +13,6 @@
   })
 }
 
-// This function generates a random number.
-const randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
-
 /**
  * This function updates the slider value.
  */
@@ -33,7 +30,7 @@ document.getElementById("correct-answer").innerHTML = "The correct answer is " +
 
 let answerCheck
 
-  if ( "slider-value" == randomNumber ) {
+  if ( "slider-value" == (Math.floor(Math.random() * 6) + 1).toFixed(0) ) {
     answerCheck = "Correct"
 } else {
     answerCheck = "Incorrect" 
