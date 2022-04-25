@@ -13,7 +13,7 @@
   })
 }
 
-// variables
+// This function generates a random number.
 const randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
 
 /**
