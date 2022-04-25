@@ -24,7 +24,7 @@
  * This function checks the slider value.
  */
 function buttonClicked() {
-const randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
+var randomNumber = (Math.floor(Math.random() * 6) + 1).toFixed(0)
 document.getElementById("answer").innerHTML = "Your answer is " + answerCheck
 document.getElementById("correct-answer").innerHTML = "The correct answer is " + randomNumber
 }
