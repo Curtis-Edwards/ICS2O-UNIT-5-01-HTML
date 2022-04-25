@@ -13,9 +13,6 @@
   })
 }
 
-// This function generates a random number.
-
-
 /**
  * This function updates the slider value.
  */
