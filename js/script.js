@@ -21,19 +21,22 @@
 }
 
 /**
- * This function displays the slider value.
+ * This function compares slider with random number.
  */
 function buttonClicked() {
-  document.getElementById("random-number").innerHTML =
-    Math.floor(Math.random() * 6) + 1
-}
+  const sliderValue = slider.value
 
-// process
-if ( "random-number" == "slider-value" ) {
-  print("Correct!")
-}
-
-// process
-if (random - number != slider - value) {
-  print("Incorrect...")
+  //  block of code to be executed if condition1 is true
+  if (sliderValue == randomNumber) {
+    document.getElementById("answer").innerHTML =
+      "Answer is " + randomNumber + "!" + " Correct!"
+    // console.log(". Correct!")
+  }
+    
+  //  block of code to be executed if condition1 is true
+  if (sliderValue != randomNumber) {
+    document.getElementById("answer").innerHTML =
+      "Answer is " + randomNumber + "!" + " . Incorrect"
+    // console.log(". Incorrect...")
+  }
 }
