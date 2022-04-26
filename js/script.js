@@ -25,6 +25,8 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
   document.getElementById("slider-value").innerHTML = valueFromSlider
 }
 
+console.log(randomNumber)
+
 /**
  * This function compares slider with random number.
  */
@@ -32,13 +34,12 @@ function buttonClicked() {
   const sliderValue = slider.value
 
   //  block of code to be executed if slider is == to randomNumber
-  console.log(randomNumber)
+
+  
   if (sliderValue == randomNumber) {
     document.getElementById("answer").innerHTML =
       "Answer is " + randomNumber + ". Correct!"
-
   }
-    
   //  block of code to be executed if slider is != to randomNumber
   if (sliderValue != randomNumber) {
     document.getElementById("answer").innerHTML =
