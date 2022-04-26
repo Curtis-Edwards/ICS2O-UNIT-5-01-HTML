@@ -35,6 +35,7 @@ function buttonClicked() {
   if (sliderValue == randomNumber) {
     document.getElementById("answer").innerHTML =
       "Answer is " + randomNumber + ". Correct!"
+    console.log(randomNumber)
   }
     
   //  block of code to be executed if slider is != to randomNumber
