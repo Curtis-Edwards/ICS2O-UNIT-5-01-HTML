@@ -35,13 +35,13 @@ function buttonClicked() {
   if (sliderValue == randomNumber) {
     document.getElementById("answer").innerHTML =
       "Answer is " + randomNumber + ". Correct!"
-    // console.log(". Correct!")
+     console.log(". Correct!")
   }
     
   //  block of code to be executed if slider is != to randomNumber
   if (sliderValue != randomNumber) {
     document.getElementById("answer").innerHTML =
       "Answer is " + randomNumber + ". Incorrect..."
-    // console.log(". Incorrect...")
+     console.log(". Incorrect...")
   }
 }
